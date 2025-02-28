@@ -155,3 +155,9 @@ dismissDialog("Open Project"); // bq (Open Project Progress)
 // [Engine Memory]: 1,201 MB (+3547kb) [00:00:28]
 // Tcl Message: update_compile_order -fileset sources_1 
 // [GUI Memory]: 141 MB (+5065kb) [00:02:24]
+<<<<<<< Updated upstream
+=======
+// TclEventType: RUN_STATUS_CHANGE
+// [GUI Memory]: 150 MB (+2024kb) [00:09:54]
+// TclEventType: FILE_SET_CHANGE
+>>>>>>> Stashed changes
