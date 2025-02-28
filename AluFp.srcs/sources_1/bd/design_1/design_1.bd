@@ -1,0 +1,137 @@
+{
+  "design": {
+    "design_info": {
+      "boundary_crc": "0x0",
+      "device": "xc7a35tcpg236-1",
+      "gen_directory": "../../../../AluFp.gen/sources_1/bd/design_1",
+      "name": "design_1",
+      "rev_ctrl_bd_flag": "RevCtrlBdOff",
+      "synth_flow_mode": "Hierarchical",
+      "tool_version": "2023.2"
+    },
+    "design_tree": {
+      "Normalizer_0": "",
+      "RoundingUnit_0": "",
+      "ExponentAligner_0": ""
+    },
+    "components": {
+      "Normalizer_0": {
+        "vlnv": "xilinx.com:module_ref:Normalizer:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_Normalizer_0_0",
+        "xci_path": "ip\\design_1_Normalizer_0_0\\design_1_Normalizer_0_0.xci",
+        "inst_hier_path": "Normalizer_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "Normalizer",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "mantDiff": {
+            "direction": "I",
+            "left": "24",
+            "right": "0"
+          },
+          "expR": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "normMant": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "normExp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "RoundingUnit_0": {
+        "vlnv": "xilinx.com:module_ref:RoundingUnit:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_RoundingUnit_0_0",
+        "xci_path": "ip\\design_1_RoundingUnit_0_0\\design_1_RoundingUnit_0_0.xci",
+        "inst_hier_path": "RoundingUnit_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "RoundingUnit",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "normMant": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "normExp": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "roundedMant": {
+            "direction": "O",
+            "left": "22",
+            "right": "0"
+          },
+          "roundedExp": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      },
+      "ExponentAligner_0": {
+        "vlnv": "xilinx.com:module_ref:ExponentAligner:1.0",
+        "ip_revision": "1",
+        "xci_name": "design_1_ExponentAligner_0_0",
+        "xci_path": "ip\\design_1_ExponentAligner_0_0\\design_1_ExponentAligner_0_0.xci",
+        "inst_hier_path": "ExponentAligner_0",
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "ExponentAligner",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "expA": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "expB": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "mantA": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "mantB": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "alignedMantA": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "alignedMantB": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "expR": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,7 @@
+Running: xsim.dir/tb_alu_subtract_behav/xsimk.exe -simmode gui -wdb tb_alu_subtract_behav.wdb -simrunnum 0 -socket 59422
+Design successfully loaded
+Design Loading Memory Usage: 8068 KB (Peak: 8068 KB)
+Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 8668 KB (Peak: 8668 KB)
+Simulation CPU Usage: 62 ms

@@ -1,0 +1,24 @@
+0.7
+2020.2
+Oct 13 2023
+20:47:58
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sim_1/new/alu_subtract_tb.vhd,1731484650,vhdl,,,,tb_alu_subtract,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sim_1/new/div_tb.vhd,1736264350,vhdl,,,,tb_alu_division,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sim_1/new/sub_test.vhd,1736338120,vhdl,,,,sub_test,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sim_1/new/tb_MantissaSubtractor.vhd,1731340207,vhdl,,,,tb_mantissasubtractor,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/Division.vhd,1735832702,vhdl,,,,division,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExpHandler.vhd,1735831716,vhdl,,,,exphandler,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd,1735979800,vhdl,,,,exponentaligner,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd,1736338364,vhdl,,,,exponentcomparator,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaComparator.vhd,1733427873,vhdl,,,,mantissacomparator,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaExponentSeparator.vhd,1733132861,vhdl,,,,mantissaexponentseparator,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaSubtractor.vhd,1735982004,vhdl,,,,mantissasubtractor,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/Normalizer.vhd,1733426058,vhdl,,,,normalizer,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/RegisterFile.vhd,1736339552,vhdl,,,,registerfile,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/RoundingUnit.vhd,1733156493,vhdl,,,,roundingunit,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/SignHandler.vhd,1735988718,vhdl,,,,signhandler,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/TwosComplementConverter.vhd,1735985652,vhdl,,,,twocomplementconverter,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd,1735988358,vhdl,,,,ripplecarryadder,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_div.vhd,1735988726,vhdl,,,,alu_division,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd,1735983053,vhdl,,,,alu_subtract,,,,,,,,
+C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd,1731410200,vhdl,,,,full_addr,,,,,,,,

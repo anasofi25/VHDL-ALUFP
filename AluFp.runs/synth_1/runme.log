@@ -1,0 +1,308 @@
+
+*** Running vivado
+    with args -log alu_subtract.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_subtract.tcl
+
+
+
+****** Vivado v2023.2 (64-bit)
+  **** SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+  **** IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+  **** SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+    ** Copyright 1986-2022 Xilinx, Inc. All Rights Reserved.
+    ** Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+
+source alu_subtract.tcl -notrace
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+create_project: Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 556.703 ; gain = 183.418
+Command: read_checkpoint -auto_incremental -incremental C:/Users/Ana/Downloads/AluFp/AluFp.srcs/utils_1/imports/synth_1/alu_subtract.dcp
+INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/Ana/Downloads/AluFp/AluFp.srcs/utils_1/imports/synth_1/alu_subtract.dcp for incremental synthesis
+INFO: [Vivado 12-7989] Please ensure there are no constraint changes
+Command: synth_design -top alu_subtract -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Designutils 20-5440] No compile time benefit to using incremental synthesis; A full resynthesis will be run
+INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+WARNING: [Common 17-1361] You have specified a new message control rule that is equivalent to an existing rule with attributes ' -id {17-179}  -suppress '. The existing rule will be replaced.
+INFO: [Synth 8-7075] Helper process launched with PID 5860
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1004.949 ; gain = 438.723
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'alu_subtract' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:15]
+INFO: [Synth 8-3491] module 'RegisterFile' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/RegisterFile.vhd:5' bound to instance 'RegFileA' of component 'RegisterFile' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:121]
+INFO: [Synth 8-638] synthesizing module 'RegisterFile' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/RegisterFile.vhd:13]
+INFO: [Synth 8-256] done synthesizing module 'RegisterFile' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/RegisterFile.vhd:13]
+INFO: [Synth 8-3491] module 'RegisterFile' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/RegisterFile.vhd:5' bound to instance 'RegFileB' of component 'RegisterFile' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:127]
+INFO: [Synth 8-3491] module 'MantissaExponentSeparator' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaExponentSeparator.vhd:5' bound to instance 'MantA_Separator' of component 'MantissaExponentSeparator' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:134]
+INFO: [Synth 8-638] synthesizing module 'MantissaExponentSeparator' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaExponentSeparator.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'MantissaExponentSeparator' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaExponentSeparator.vhd:14]
+INFO: [Synth 8-3491] module 'MantissaExponentSeparator' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaExponentSeparator.vhd:5' bound to instance 'MantB_Separator' of component 'MantissaExponentSeparator' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:141]
+INFO: [Synth 8-3491] module 'ExponentComparator' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:5' bound to instance 'ExpComp' of component 'ExponentComparator' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:149]
+INFO: [Synth 8-638] synthesizing module 'ExponentComparator' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'ExponentComparator' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:15]
+INFO: [Synth 8-3491] module 'MantissaComparator' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaComparator.vhd:5' bound to instance 'MantComp' of component 'MantissaComparator' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:158]
+INFO: [Synth 8-638] synthesizing module 'MantissaComparator' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaComparator.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'MantissaComparator' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaComparator.vhd:15]
+INFO: [Synth 8-3491] module 'ExponentAligner' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:5' bound to instance 'ExponentAlign' of component 'ExponentAligner' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:167]
+INFO: [Synth 8-638] synthesizing module 'ExponentAligner' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'ExponentAligner' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:17]
+INFO: [Synth 8-3491] module 'MantissaSubtractor' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaSubtractor.vhd:5' bound to instance 'MantSub' of component 'MantissaSubtractor' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:178]
+INFO: [Synth 8-638] synthesizing module 'MantissaSubtractor' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaSubtractor.vhd:14]
+INFO: [Synth 8-3491] module 'TwoComplementConverter' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/TwosComplementConverter.vhd:5' bound to instance 'TC_Convert' of component 'TwoComplementConverter' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaSubtractor.vhd:38]
+INFO: [Synth 8-638] synthesizing module 'TwoComplementConverter' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/TwosComplementConverter.vhd:11]
+INFO: [Synth 8-256] done synthesizing module 'TwoComplementConverter' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/TwosComplementConverter.vhd:11]
+INFO: [Synth 8-3491] module 'RippleCarryAdder' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:5' bound to instance 'Adder_Unit' of component 'RippleCarryAdder' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaSubtractor.vhd:44]
+INFO: [Synth 8-638] synthesizing module 'RippleCarryAdder' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:15]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA1' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:28]
+INFO: [Synth 8-638] synthesizing module 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:16]
+INFO: [Synth 8-256] done synthesizing module 'full_addr' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:16]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA2' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:29]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA3' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:30]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA4' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:31]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA5' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:32]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA6' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:33]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA7' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:34]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA8' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:35]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA9' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:36]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA10' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:37]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA11' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:38]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA12' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:39]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA13' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:40]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA14' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:41]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA15' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:42]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA16' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:43]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA17' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:44]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA18' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:45]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA19' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:46]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA20' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:47]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA21' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:48]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA22' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:49]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA23' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:50]
+INFO: [Synth 8-3491] module 'full_addr' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/full_addr.vhd:7' bound to instance 'FA24' of component 'full_addr' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:51]
+INFO: [Synth 8-256] done synthesizing module 'RippleCarryAdder' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/adder.vhd:15]
+INFO: [Synth 8-256] done synthesizing module 'MantissaSubtractor' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/MantissaSubtractor.vhd:14]
+INFO: [Synth 8-3491] module 'Normalizer' declared at 'C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/Normalizer.vhd:5' bound to instance 'NormalizerStage' of component 'Normalizer' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:186]
+INFO: [Synth 8-638] synthesizing module 'Normalizer' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/Normalizer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'Normalizer' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/Normalizer.vhd:14]
+INFO: [Synth 8-256] done synthesizing module 'alu_subtract' (0#1) [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:15]
+WARNING: [Synth 8-3936] Found unconnected internal register 'normMant_1_reg' and it is trimmed from '24' to '23' bits. [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/Normalizer.vhd:20]
+WARNING: [Synth 8-3917] design alu_subtract has port result[31] driven by constant 0
+WARNING: [Synth 8-7129] Port reset in module RegisterFile is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1113.113 ; gain = 546.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1113.113 ; gain = 546.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1113.113 ; gain = 546.887
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 1113.113 ; gain = 546.887
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input    8 Bit       Adders := 1     
+	   2 Input    8 Bit       Adders := 1     
++---XORs : 
+	   3 Input      1 Bit         XORs := 24    
++---Muxes : 
+	   5 Input   32 Bit        Muxes := 2     
+	   2 Input   24 Bit        Muxes := 7     
+	   2 Input   23 Bit        Muxes := 1     
+	   2 Input    8 Bit        Muxes := 6     
+	   2 Input    2 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+WARNING: [Synth 8-3917] design alu_subtract has port result[31] driven by constant 0
+WARNING: [Synth 8-7129] Port reset in module alu_subtract is either unconnected or has no load
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:22 . Memory (MB): peak = 1308.398 ; gain = 742.172
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1313.625 ; gain = 747.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:11 ; elapsed = 00:00:23 . Memory (MB): peak = 1313.625 ; gain = 747.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1313.625 ; gain = 747.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1313.625 ; gain = 747.398
+---------------------------------------------------------------------------------
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_out_b[24] with 1st driver pin 'gtOp__1_carry_i_19/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_out_b[24] with 2nd driver pin 'gtOp__1_carry_i_20/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/RegisterFile.vhd:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_out_b[30] with 1st driver pin 'gtOp__1_carry_i_15/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_out_b[30] with 2nd driver pin 'gtOp__1_carry_i_16/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/RegisterFile.vhd:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_out_b[28] with 1st driver pin 'gtOp__1_carry_i_9/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_out_b[28] with 2nd driver pin 'gtOp__1_carry_i_10/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_out_b[28] with 3rd driver pin 'gtOp__1_carry_i_11/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_out_b[28] with 4th driver pin 'gtOp__1_carry_i_12/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_out_b[28] with 5th driver pin 'gtOp__1_carry_i_13/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin data_out_b[28] with 6th driver pin 'gtOp__1_carry_i_14/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/RegisterFile.vhd:27]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[0] with 1st driver pin 'result_OBUF[27]_inst_i_6/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[0] with 2nd driver pin 'result_OBUF[27]_inst_i_7/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[1] with 1st driver pin 'result_OBUF[27]_inst_i_9/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[1] with 2nd driver pin 'result_OBUF[27]_inst_i_10/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[2] with 1st driver pin 'result_OBUF[27]_inst_i_4/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[2] with 2nd driver pin 'result_OBUF[27]_inst_i_5/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[3] with 1st driver pin 'result_OBUF[27]_inst_i_11/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[3] with 2nd driver pin 'result_OBUF[27]_inst_i_12/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[4] with 1st driver pin 'result_OBUF[27]_inst_i_2/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[4] with 2nd driver pin 'result_OBUF[27]_inst_i_3/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[5] with 1st driver pin 'result_OBUF[30]_inst_i_5/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[5] with 2nd driver pin 'result_OBUF[30]_inst_i_6/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[6] with 1st driver pin 'result_OBUF[30]_inst_i_2/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[6] with 2nd driver pin 'result_OBUF[30]_inst_i_3/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[7] with 1st driver pin 'result_OBUF[30]_inst_i_7/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin bigger_exp[7] with 2nd driver pin 'result_OBUF[30]_inst_i_8/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A_greater_B with 1st driver pin 'MantComp/gtOp_carry/CO[1]' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin A_greater_B with 2nd driver pin 'ExpComp/gtOp__1_carry/CO[3]' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentAligner.vhd:25]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gtOp__1_carry_i_17_n_0 with 1st driver pin 'gtOp__1_carry_i_17/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/ExponentComparator.vhd:22]
+CRITICAL WARNING: [Synth 8-6859] multi-driven net on pin gtOp__1_carry_i_17_n_0 with 2nd driver pin 'gtOp__1_carry_i_18/O' [C:/Users/Ana/Downloads/AluFp/AluFp.srcs/sources_1/new/alu_subtract.vhd:6]
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|       13|Failed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1313.625 ; gain = 747.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1313.625 ; gain = 747.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1313.625 ; gain = 747.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1313.625 ; gain = 747.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    12|
+|2     |LUT1   |     3|
+|3     |LUT2   |    14|
+|4     |LUT3   |    33|
+|5     |LUT4   |    31|
+|6     |LUT5   |    65|
+|7     |LUT6   |    62|
+|8     |IBUF   |     4|
+|9     |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+-----------------------+------+
+|      |Instance        |Module                 |Cells |
++------+----------------+-----------------------+------+
+|1     |top             |                       |   256|
+|2     |  ExpComp       |ExponentComparator     |    43|
+|3     |  ExponentAlign |ExponentAligner        |   151|
+|4     |  MantComp      |MantissaComparator     |     1|
+|5     |  MantSub       |MantissaSubtractor     |    23|
+|6     |    TC_Convert  |TwoComplementConverter |    23|
++------+----------------+-----------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1313.625 ; gain = 747.398
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 30 critical warnings and 7 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1313.625 ; gain = 747.398
+Synthesis Optimization Complete : Time (s): cpu = 00:00:14 ; elapsed = 00:00:26 . Memory (MB): peak = 1313.625 ; gain = 747.398
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.004 . Memory (MB): peak = 1325.738 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 12 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1403.266 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+The system cannot find the path specified.
+Synth Design complete | Checksum: d114b76
+INFO: [Common 17-83] Releasing license: Synthesis
+73 Infos, 8 Warnings, 30 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:16 ; elapsed = 00:00:28 . Memory (MB): peak = 1403.266 ; gain = 843.621
+INFO: [runtcl-6] Synthesis results are not added to the cache due to CRITICAL_WARNING
+Write ShapeDB Complete: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1403.266 ; gain = 0.000
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Ana/Downloads/AluFp/AluFp.runs/synth_1/alu_subtract.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file alu_subtract_utilization_synth.rpt -pb alu_subtract_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Thu Dec  5 21:55:07 2024...

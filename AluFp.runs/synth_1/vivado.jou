@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2023.2 (64-bit)
+# SW Build 4029153 on Fri Oct 13 20:14:34 MDT 2023
+# IP Build 4028589 on Sat Oct 14 00:45:43 MDT 2023
+# SharedData Build 4025554 on Tue Oct 10 17:18:54 MDT 2023
+# Start of session at: Thu Dec  5 21:54:30 2024
+# Process ID: 10348
+# Current directory: C:/Users/Ana/Downloads/AluFp/AluFp.runs/synth_1
+# Command line: vivado.exe -log alu_subtract.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source alu_subtract.tcl
+# Log file: C:/Users/Ana/Downloads/AluFp/AluFp.runs/synth_1/alu_subtract.vds
+# Journal file: C:/Users/Ana/Downloads/AluFp/AluFp.runs/synth_1\vivado.jou
+# Running On: Ana-laptop, OS: Windows, CPU Frequency: 2803 MHz, CPU Physical cores: 4, Host memory: 16952 MB
+#-----------------------------------------------------------
+source alu_subtract.tcl -notrace
