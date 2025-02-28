@@ -154,3 +154,4 @@ Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
 dismissDialog("Open Project"); // bq (Open Project Progress)
 // [Engine Memory]: 1,201 MB (+3547kb) [00:00:28]
 // Tcl Message: update_compile_order -fileset sources_1 
+// [GUI Memory]: 141 MB (+5065kb) [00:02:24]
